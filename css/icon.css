@@ -2,7 +2,7 @@
 	display: inline-block;
 	width: 26px;
 	height: 22px;
-	background: url(../img/sprite_list_icon.gif) 9999px 9999px no-repeat;
+	background: url(../image/sprite_list_icon.gif) 9999px 9999px no-repeat;
 	background-position: -421px -83px
 }
 
@@ -161,7 +161,7 @@
 	display: inline-block;
 	width: 30px;
 	height: 30px;
-	background: url(../img/sprite_list_icon30.png?t=1446804668035) 9999px 9999px no-repeat;
+	background: url(../image/sprite_list_icon30.png?t=1446804668035) 9999px 9999px no-repeat;
 	background-position: -560px 0
 }
 
@@ -271,7 +271,7 @@
 	display: inline-block;
 	width: 92px;
 	height: 92px;
-	background: url(../img/property_icon_101.png?t=1446804668035) 9999px 9999px no-repeat;
+	background: url(../image/property_icon_101.png?t=1446804668035) 9999px 9999px no-repeat;
 	background-position: -0px -0px
 }
 
@@ -279,17 +279,17 @@
 }
 
 .global-icon-62-shouchang {
-	background: url(../img/spritenew-f.gif?t=1446804668035) 9999px 9999px no-repeat;
+	background: url(../image/spritenew-f.gif?t=1446804668035) 9999px 9999px no-repeat;
 	background-position: -820px 0
 }
 
 .global-icon-62-yingyong_child,.global-icon-62-yingyong {
-	background: url(../img/spritenew-f.gif?t=1446804668035) 9999px 9999px no-repeat;
+	background: url(../image/spritenew-f.gif?t=1446804668035) 9999px 9999px no-repeat;
 	background-position: -182px 0
 }
 
 .global-icon-62-beifen {
-	background: url(../img/spritenew-f.gif?t=1446804668035) 9999px 9999px no-repeat;
+	background: url(../image/spritenew-f.gif?t=1446804668035) 9999px 9999px no-repeat;
 	background-position: -339px 0
 }
 
@@ -374,7 +374,7 @@
 }
 
 .global-icon-62-dir {
-	background: url(../img/spritenew-f.gif?t=1446804668035) 9999px 9999px no-repeat;
+	background: url(../image/spritenew-f.gif?t=1446804668035) 9999px 9999px no-repeat;
 	background-position: -24px 0
 }
 
@@ -397,7 +397,7 @@
 	display: inline-block;
 	width: 20px;
 	height: 20px;
-	background: url(../img/btn_icon.gif?t=1446804668035) no-repeat;
+	background: url(../image/btn_icon.gif?t=1446804668035) no-repeat;
 	background-position: -421px -83px
 }
 
