@@ -1,64 +1,6 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="renderer" content="webkit">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>云盘中心 - 你的云盘</title>
-	<!-- Bootstrap -->
-	<link href="static/css/bootstrap-3.3.5.min.css" rel="stylesheet">
-	<!-- dashboard -->
-	<link href="css/dashboard.css" rel="stylesheet">
-
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
-		<script src="static/js/html5shiv.min.js"></script>
-		<script src="static/js/respond.min.js"></script>
-	<![endif]-->
-</head>
-<body>
-
-<nav class="navbar navbar-inverse navbar-fixed-top">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#" id="navbar-logo">我的云盘</a>
-		</div>
-		<div id="navbar" class="navbar-collapse collapse">
-			<ul class="nav navbar-nav navbar-right">
-				<li class="active"><a href="#">网盘文件</a></li>
-				<li>
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-						<i class="glyphicon glyphicon-user"></i>
-						<span id="nav_user">个人中心</span>
-						<span class="caret"></span>
-					</a>
-					<ul class="dropdown-menu">
-						<li><a href="#">我的信息</a></li>
-						<li><a href="#">购买容量</a></li>
-					</ul>
-				</li>
-				<li><a href="#">客户端下载</a></li>
-				<li><a href="#">帮助</a></li>
-			</ul>
-			<form class="navbar-form navbar-right">
-				<div class="input-group">
-					<input type="text" class="form-control" placeholder="搜索一下">
-					<a class="input-group-addon"><i class="glyphicon glyphicon-search"></i></a>
-				</div>
-			</form>
-		</div>
-	</div>
-</nav>
-
 <div class="container-fluid">
 	<div class="row">
+		<!-- Sidebar begin -->
 		<div class="col-sm-3 col-md-2 sidebar">
 			<ul class="nav nav-sidebar" id="side-bar">
 				<li class="active"><a href="#"><i class="glyphicon glyphicon-th"></i> 全部文件<span class="sr-only">(当前选项)</span></a></li>
@@ -90,6 +32,9 @@
 				</div>
 			</div>
 		</div>
+		<!-- Sidebar end -->
+
+		<!-- File Panel begin -->
 		<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 			<!--<h1 class="page-header">所有文件</h1>-->
 			<div class="btn-toolbar placeholder" role="" aria-label="...">
@@ -114,6 +59,10 @@
 				<button type="button" class="btn btn-primary navbar-btn">
 					<i class=" glyphicon glyphicon-trash"></i>
 					删除
+				</button>
+				<button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#SafetyOptionsModal">
+					<i class="glyphicon glyphicon-cog"></i>
+					安全设置
 				</button>
 			</div>
 			<ol class="breadcrumb" id="path">
@@ -230,7 +179,7 @@
 							<td>ad</td>
 							<td>litora</td>
 						</tr>
-						<tr>
+						<!--<tr>
 							<td><input type="checkbox" /></td>
 							<td>torquent</td>
 							<td>per</td>
@@ -250,21 +199,11 @@
 							<td>ligula</td>
 							<td>in</td>
 							<td>libero</td>
-						</tr>
+						</tr>-->
 					</tbody>
 				</table>
 			</div>
 		</div>
+		<!-- File Panel end -->
 	</div>
 </div>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script type="text/javascript" src="static/script/jquery-1.11.2.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="static/script/bootstrap-3.3.5.min.js"></script>
-<!-- Dashboard script, do not load until window.jQuery exists -->
-<script type="text/javascript" src="script/dashboard.js"></script>
-
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<!--[if eq IE 10]><script src="static/script/ie10-viewport-bug-workaround.js"></script><![endif]-->
-</body>
-</html>
