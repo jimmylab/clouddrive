@@ -5,25 +5,29 @@
  */
 $(function() {
 	$.fn.extend({
-		'check': (function(checkOrNot) {
-			this.checked = checkOrNot;
+		'checked': (function(checkOrNot) {
+			this.each(function() {
+				this.checked = checkOrNot;
+			});
+			return this;
 		}),
 		'highlight': (function(addOrNot) {
-			$(this).parent().parent().toggleClass('info', addOrNot);
+			this.parent().parent().toggleClass('info', addOrNot);
+			return this;
 		})
 	});
 
 	$('#fileview > thead').on('change', 'tr > th > input', function() {
 		$(this).highlight(this.checked);
 		$('#fileview > tbody > tr > td > input')
-			.check(this.checked)
+			.checked(this.checked)
 			.highlight(this.checked);
 	});
 
 	$('#fileview > tbody').on('change', 'tr > td > input', function() {
-		if ( this.checked === false ) {
+		if (this.checked === false) {
 			// Actually there's only one checkbox inside the <thead>
-			$('#fileview > thead > tr > th > input').checked(false);
+			$('#fileview > thead > tr > th > input').checked(false).highlight(false);
 		}
 		$(this).highlight(this.checked);
 	});
@@ -42,9 +46,9 @@ $(function() {
 	})
 
 	$("#SaveSafetyOptions").on("click", function (ev) {
-		var status = Math.random() < 0.75 ? "success" : "error";
+		var status = Math.random() < 0.66 ? "success" : "error";
 		var ExampleRpcData = {
-			"success": {
+			"error": {
 				"jsonrpc": "2.0",
 				"error": {
 					"code": -32701,
@@ -53,7 +57,7 @@ $(function() {
 				},
 				"id": 2
 			},
-			"error": {
+			"success": {
 				"jsonrpc": "2.0",
 				"result": "success",
 				"id": 1

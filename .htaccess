@@ -1,4 +1,4 @@
 RewriteEngine on
 RewriteBase /
-RewriteCond $1 !^(index\.php|static|css|script|image|phpmyadmin|robots\.txt|\.js|\.css)
+RewriteCond $1 !^(index\.php|test|static|css|script|image|phpmyadmin|robots\.txt|\.js|\.css)
 RewriteRule ^(.*)$ /clouddrive/index.php/$1 [L]

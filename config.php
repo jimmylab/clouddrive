@@ -15,3 +15,5 @@ $config['default_controller'] = 'dashboard';
 $config['db']['dsn'] = 'mysql:host=localhost;dbname=cloud-drive';
 $config['db']['user'] = 'cloud-drive_root';
 $config['db']['pass'] = 'WKt3BzA9nR8uaHaZ';
+
+$GLOBALS['config'] = $config;
